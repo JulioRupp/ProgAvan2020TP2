@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title><TP2-Nuevo></TP2-Nuevo></title>
+</head>
+<div class="contenedor coches">
+    <h2>Ejercicio1-Objetos coches</h2>
+    <p id="contenedorinfocoches"></p>
+</div>
+
+<div class="container-table">
+    <h2>Ejercicio2 top 10 de artistas</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Playcounts</th>
+                <th scope="col">Listeners</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpo-tabla">
+        </tbody>
+    </table>
+</div>
+<div class="container-form">
+    <h2>Ejercicio3 </h2>
+    <form id="formulario">
+        <div class="form-group">
+            <label for="input-nombre">Nombre</label>
+            <input type="text" class="form-control" id="input_nombre" name="Nombre" placeholder="Ingresa tu nombre"
+                value="Daniela">
+                
+        </div>
+        <div class="form-group">
+            <label for="input-apellido">Apellido</label>
+            <input type="text" class="form-control" id="input_apellido" name="Apellido"
+                placeholder="Ingresa tu apellido" value="Amadio">
+                
+        </div>
+        <div class="form-group">
+            <label for="input-direccion">Direccion</label>
+            <input type="text" class="form-control" id="input_direccion" name="Direccion"
+                placeholder="Ingresa tu dirección" value="Asunsion 895">
+               
+        </div>
+        <div class="form-group">
+            <label for="input-telefono">Telefono</label>
+            <input type="tel" class="form-control" id="input_telefono" name="Telefono"
+                placeholder="Ingresa tu telefono" value="178543">
+                
+        </div>
+        <div class="form-group">
+            <label for="input-email">E-mail</label>
+            <input type="email" class="form-control" id="input_email" name="E-mail"
+                placeholder="Ingresa tu correo electrónico" value="dea@96.com">
+               
+            <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+        <div class="btn-group-lg">
+            <button type="button" class="btn btn-primary btn-danger" id="boton_cancelar">Cancelar</button>
+            <button type="button" class="btn btn-primary btn-success" id="boton_enviar">Enviar Respuesta</button>
+        </div>
+    </form>
+</div>
+
+<div class="container" id="contenedor-tablero">
+    <div id="opciones-tablero">
+    <h2>Opciones del juego</h2>
+    <input type="button" id="mostrar-stats" value="Mostrar estado">
+    </div>
+    <br>
+    <div id="legolas">
+    <h3>LEGOLAS</h3>
+    <div>
+        <label>Acciones: </label>
+        <div class="btn-group-justified">
+            <button type="button" class="btn btn-primary" id="atacar-legolas">Lanzar flecha</button>
+            <button type="button" class="btn btn-primary" id="curarse-legolas">Curarse</button>
+            <button type="button" class="btn btn-primary" id="curar-enemigo-legolas">Curar Enemigo</button>
+        </div>
+    </div>
+    <br>
+    <div>
+        <label>Stats:</label><br>
+        <label>HP: </label>
+        <input id="hp-legolas" value="100">
+        <label>SP: </label>
+        <input id="sp-legolas" value="120">
+       
+    </div>
+    </div>
+    <br>
+    <div id="orco">
+    <h3>ORCO</h3>
+    <div>
+        <label>Acciones: </label>
+        <div class="btn-group-justified">
+            <button type="button" class="btn btn-primary" id="atacar-orco">Golpear con garrote</button>
+            <button type="button" class="btn btn-primary" id="curarse-orco">Curarse</button>
+            <button type="button" class="btn btn-primary" id="curar-enemigo-orco">Curar Enemigo</button>
+    
+        </div>
+    </div>
+    <br>
+    <div>
+        <label>Stats:</label><br>
+        <label>HP: </label>
+        <input id="hp-orco" value="100">
+        <label>SP: </label>
+        <input id="sp-orco" value="60">
+        
+    </div>
+    </div>
+    </div>
+    
+    </body>
+
+<script src="Ejercicio1.js"></script>
+<script src="Ejercicio2.js"></script>
+<script src="Ejercicio3.js"></script>
+<script src="Ejercicio4.js"></script>
+</html>  
